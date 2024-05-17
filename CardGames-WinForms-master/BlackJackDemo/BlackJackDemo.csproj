@@ -1,0 +1,441 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{52358670-8B59-46D8-95F1-9B6766178320}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>BlackJackDemo</RootNamespace>
+    <AssemblyName>BlackJackDemo</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>foxexe.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Control.Draggable, Version=1.0.5049.269, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Control.Draggable.1.0.5049.269\lib\net35-Client\Control.Draggable.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form10.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form10.Designer.cs">
+      <DependentUpon>Form10.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form4.Designer.cs">
+      <DependentUpon>Form4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form5.Designer.cs">
+      <DependentUpon>Form5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form6.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form6.Designer.cs">
+      <DependentUpon>Form6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form7.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form7.Designer.cs">
+      <DependentUpon>Form7.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form8.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form8.Designer.cs">
+      <DependentUpon>Form8.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form9.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form9.Designer.cs">
+      <DependentUpon>Form9.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Kartlar.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form3.Designer.cs">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form10.resx">
+      <DependentUpon>Form10.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form3.resx">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form4.resx">
+      <DependentUpon>Form4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form5.resx">
+      <DependentUpon>Form5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form6.resx">
+      <DependentUpon>Form6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form7.resx">
+      <DependentUpon>Form7.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form8.resx">
+      <DependentUpon>Form8.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form9.resx">
+      <DependentUpon>Form9.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="foxexe.ico" />
+    <Content Include="Resources\10C.png" />
+    <Content Include="Resources\10D.png" />
+    <Content Include="Resources\10H.png" />
+    <Content Include="Resources\10S.png" />
+    <Content Include="Resources\10_club.png" />
+    <Content Include="Resources\10_diamond.png" />
+    <Content Include="Resources\10_heart.png" />
+    <Content Include="Resources\10_spade.png" />
+    <Content Include="Resources\11_club.png" />
+    <Content Include="Resources\11_diamond.png" />
+    <Content Include="Resources\11_heart.png" />
+    <Content Include="Resources\11_spade.png" />
+    <Content Include="Resources\12_club.png" />
+    <Content Include="Resources\12_diamond.png" />
+    <Content Include="Resources\12_heart.png" />
+    <Content Include="Resources\12_spade.png" />
+    <Content Include="Resources\13_club.png" />
+    <Content Include="Resources\13_diamond.png" />
+    <Content Include="Resources\13_heart.png" />
+    <Content Include="Resources\13_spade.png" />
+    <None Include="Resources\zor.png" />
+    <None Include="Resources\15.png" />
+    <None Include="Resources\15_dark.png" />
+    <Content Include="Resources\1_club.png" />
+    <Content Include="Resources\1_diamond.png" />
+    <Content Include="Resources\1_heart.png" />
+    <Content Include="Resources\1_spade.png" />
+    <None Include="Resources\20.png" />
+    <None Include="Resources\25.png" />
+    <None Include="Resources\25_dark.png" />
+    <Content Include="Resources\2C.png" />
+    <Content Include="Resources\2D.png" />
+    <Content Include="Resources\2H.png" />
+    <Content Include="Resources\2S.png" />
+    <Content Include="Resources\2_club.png" />
+    <Content Include="Resources\2_diamond.png" />
+    <Content Include="Resources\2_heart.png" />
+    <Content Include="Resources\2_spade.png" />
+    <Content Include="Resources\3C.png" />
+    <Content Include="Resources\3D.png" />
+    <Content Include="Resources\3H.png" />
+    <Content Include="Resources\3S.png" />
+    <Content Include="Resources\3_club.png" />
+    <Content Include="Resources\3_diamond.png" />
+    <Content Include="Resources\3_heart.png" />
+    <Content Include="Resources\3_spade.png" />
+    <Content Include="Resources\4C.png" />
+    <Content Include="Resources\4D.png" />
+    <Content Include="Resources\4H.png" />
+    <Content Include="Resources\4S.png" />
+    <Content Include="Resources\4_club.png" />
+    <Content Include="Resources\4_diamond.png" />
+    <Content Include="Resources\4_heart.png" />
+    <Content Include="Resources\4_spade.png" />
+    <Content Include="Resources\5C.png" />
+    <Content Include="Resources\5D.png" />
+    <Content Include="Resources\5H.png" />
+    <Content Include="Resources\5S.png" />
+    <Content Include="Resources\5_club.png" />
+    <Content Include="Resources\5_diamond.png" />
+    <Content Include="Resources\5_heart.png" />
+    <Content Include="Resources\5_spade.png" />
+    <Content Include="Resources\6C.png" />
+    <Content Include="Resources\6D.png" />
+    <Content Include="Resources\6H.png" />
+    <Content Include="Resources\6S.png" />
+    <Content Include="Resources\6_club.png" />
+    <Content Include="Resources\6_diamond.png" />
+    <Content Include="Resources\6_heart.png" />
+    <Content Include="Resources\6_spade.png" />
+    <Content Include="Resources\7C.png" />
+    <Content Include="Resources\7D.png" />
+    <Content Include="Resources\7H.png" />
+    <Content Include="Resources\7S.png" />
+    <Content Include="Resources\7_club.png" />
+    <Content Include="Resources\7_diamond.png" />
+    <Content Include="Resources\7_heart.png" />
+    <Content Include="Resources\7_spade.png" />
+    <Content Include="Resources\8C.png" />
+    <Content Include="Resources\8D.png" />
+    <Content Include="Resources\8H.png" />
+    <Content Include="Resources\8S.png" />
+    <Content Include="Resources\8_club.png" />
+    <Content Include="Resources\8_diamond.png" />
+    <Content Include="Resources\8_heart.png" />
+    <Content Include="Resources\8_spade.png" />
+    <Content Include="Resources\9C.png" />
+    <Content Include="Resources\9D.png" />
+    <Content Include="Resources\9H.png" />
+    <Content Include="Resources\9S.png" />
+    <Content Include="Resources\9_club.png" />
+    <Content Include="Resources\9_diamond.png" />
+    <Content Include="Resources\9_heart.png" />
+    <Content Include="Resources\9_spade.png" />
+    <Content Include="Resources\AC.png" />
+    <Content Include="Resources\AD.png" />
+    <Content Include="Resources\AH.png" />
+    <Content Include="Resources\AS.png" />
+    <Content Include="Resources\b0.png" />
+    <Content Include="Resources\b1.png" />
+    <Content Include="Resources\b1fv.png" />
+    <Content Include="Resources\b2.png" />
+    <Content Include="Resources\b3.png" />
+    <Content Include="Resources\b4.png" />
+    <Content Include="Resources\b5.png" />
+    <Content Include="Resources\b6.png" />
+    <Content Include="Resources\b7.png" />
+    <Content Include="Resources\b8.png" />
+    <Content Include="Resources\b9.png" />
+    <Content Include="Resources\background_main.gif" />
+    <None Include="Resources\zorEdit.png" />
+    <None Include="Resources\background_main1.gif" />
+    <None Include="Resources\button_blackjackkk.png" />
+    <None Include="Resources\button_blackjack_press.png" />
+    <None Include="Resources\button_blackjack_dontpress.png" />
+    <None Include="Resources\button_blackjack_dontpresse.png" />
+    <None Include="Resources\button_blackjack_pressee.png" />
+    <None Include="Resources\fox.png" />
+    <None Include="Resources\foxx.png" />
+    <None Include="Resources\comment_box.png" />
+    <None Include="Resources\comment_box_reverse.png" />
+    <None Include="Resources\blackjackBackground.png" />
+    <Content Include="Resources\bb0.png" />
+    <Content Include="Resources\bb1.png" />
+    <Content Include="Resources\bb2.png" />
+    <Content Include="Resources\bb3.png" />
+    <Content Include="Resources\bb4.png" />
+    <Content Include="Resources\bb5.png" />
+    <Content Include="Resources\bb6.png" />
+    <Content Include="Resources\bb7.png" />
+    <Content Include="Resources\bb8.png" />
+    <Content Include="Resources\bb9.png" />
+    <None Include="Resources\card_back.png" />
+    <None Include="Resources\cursor.cur" />
+    <None Include="Resources\cursor.png" />
+    <None Include="Resources\card_back_bright.png" />
+    <None Include="Resources\card_back_dark.png" />
+    <None Include="Resources\dialogue blip %28mp3cut.net%29.wav" />
+    <None Include="Resources\Cards Flip%28with sound%29 %28mp3cut.net%29.wav" />
+    <Content Include="Resources\g0.png" />
+    <Content Include="Resources\g1.png" />
+    <Content Include="Resources\g2.png" />
+    <Content Include="Resources\g3.png" />
+    <Content Include="Resources\g4.png" />
+    <Content Include="Resources\g5.png" />
+    <Content Include="Resources\g6.png" />
+    <Content Include="Resources\g7.png" />
+    <Content Include="Resources\g8.png" />
+    <Content Include="Resources\g9.png" />
+    <Content Include="Resources\gg0.png" />
+    <Content Include="Resources\gg1.png" />
+    <Content Include="Resources\gg2.png" />
+    <Content Include="Resources\gg3.png" />
+    <Content Include="Resources\gg4.png" />
+    <Content Include="Resources\gg5.png" />
+    <Content Include="Resources\gg6.png" />
+    <Content Include="Resources\gg7.png" />
+    <Content Include="Resources\gg8.png" />
+    <Content Include="Resources\gg9.png" />
+    <Content Include="Resources\giphy.gif" />
+    <Content Include="Resources\greenfelt.jpg" />
+    <None Include="Resources\home.png" />
+    <None Include="Resources\hometripeek.png" />
+    <None Include="Resources\HighScore.png" />
+    <None Include="Resources\hig_skies.jpg" />
+    <None Include="Resources\homebright.png" />
+    <None Include="Resources\homedark.png" />
+    <None Include="Resources\highscoreBackgrounTextmor.png" />
+    <Content Include="Resources\images.jpg" />
+    <None Include="Resources\imlec.png" />
+    <Content Include="Resources\JC.png" />
+    <Content Include="Resources\JD.png" />
+    <Content Include="Resources\JH.png" />
+    <Content Include="Resources\JS.png" />
+    <Content Include="Resources\k0.png" />
+    <Content Include="Resources\k1.png" />
+    <Content Include="Resources\k2.png" />
+    <Content Include="Resources\k3.png" />
+    <Content Include="Resources\k4.png" />
+    <Content Include="Resources\k5.png" />
+    <Content Include="Resources\k6.png" />
+    <Content Include="Resources\k7.png" />
+    <Content Include="Resources\k8.png" />
+    <Content Include="Resources\k9.png" />
+    <None Include="Resources\karahome.png" />
+    <None Include="Resources\kaybettiniz.png" />
+    <None Include="Resources\kazandınız.png" />
+    <Content Include="Resources\KC.png" />
+    <Content Include="Resources\KD.png" />
+    <Content Include="Resources\KH.png" />
+    <None Include="Resources\KolayEdiit.png" />
+    <None Include="Resources\KolayEdit.png" />
+    <Content Include="Resources\KS.png" />
+    <None Include="Resources\Legend of Zelda - Skyward Sword - Main Menu Theme %28mp3cut.net%29.wav" />
+    <Content Include="Resources\mc_buton.wav" />
+    <None Include="Resources\music_on.png" />
+    <None Include="Resources\music_off.png" />
+    <None Include="Resources\Menu_normal.png" />
+    <None Include="Resources\Menu_press.png" />
+    <None Include="Resources\Poker_Cipi.png" />
+    <None Include="Resources\parlakhome.png" />
+    <None Include="Resources\par.png" />
+    <Content Include="Resources\QC.png" />
+    <Content Include="Resources\QD.png" />
+    <Content Include="Resources\QH.png" />
+    <Content Include="Resources\QS.png" />
+    <Content Include="Resources\r0.png" />
+    <Content Include="Resources\r1.png" />
+    <Content Include="Resources\r2.png" />
+    <Content Include="Resources\r3.png" />
+    <Content Include="Resources\r4.png" />
+    <Content Include="Resources\r5.png" />
+    <Content Include="Resources\r6.png" />
+    <Content Include="Resources\r7.png" />
+    <Content Include="Resources\r8.png" />
+    <Content Include="Resources\r9.png" />
+    <Content Include="Resources\red.png" />
+    <None Include="Resources\tripeekss.png" />
+    <None Include="Resources\tripeaks_clickk.png" />
+    <None Include="Resources\settings.png" />
+    <None Include="Resources\settingsnew.png" />
+    <None Include="Resources\settingss.png" />
+    <None Include="Resources\Tripeaks background.jpg" />
+    <None Include="Resources\tripeaksBackground.png" />
+    <None Include="Resources\uit_normal.png" />
+    <None Include="Resources\uit_press.png" />
+    <None Include="Resources\sleep_fox.png" />
+    <None Include="Resources\Score_Sign.png" />
+    <None Include="Resources\setting_bright.png" />
+    <None Include="Resources\setting_realbright.png" />
+    <None Include="Resources\slider_on.png" />
+    <None Include="Resources\slider_off.png" />
+    <Content Include="Resources\ss0.png" />
+    <Content Include="Resources\ss1.png" />
+    <Content Include="Resources\ss2.png" />
+    <Content Include="Resources\ss3.png" />
+    <Content Include="Resources\ss4.png" />
+    <Content Include="Resources\ss5.png" />
+    <Content Include="Resources\ss6.png" />
+    <Content Include="Resources\ss7.png" />
+    <Content Include="Resources\ss8.png" />
+    <Content Include="Resources\ss9.png" />
+    <None Include="Resources\stopPlayernew.png" />
+    <Content Include="Resources\t0.png" />
+    <Content Include="Resources\t1.png" />
+    <Content Include="Resources\t2.png" />
+    <Content Include="Resources\t3.png" />
+    <Content Include="Resources\t4.png" />
+    <Content Include="Resources\t5.png" />
+    <Content Include="Resources\t6.png" />
+    <Content Include="Resources\t7.png" />
+    <Content Include="Resources\t8.png" />
+    <Content Include="Resources\t9.png" />
+    <None Include="Resources\try_again.png" />
+    <None Include="Resources\try_again_press_button.png" />
+    <Content Include="Resources\y0.png" />
+    <Content Include="Resources\y1.png" />
+    <Content Include="Resources\y2.png" />
+    <Content Include="Resources\y3.png" />
+    <Content Include="Resources\y4.png" />
+    <Content Include="Resources\y5.png" />
+    <Content Include="Resources\y6.png" />
+    <Content Include="Resources\y7.png" />
+    <Content Include="Resources\y8.png" />
+    <Content Include="Resources\y9.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
